@@ -1,7 +1,7 @@
 # WbmUsercentrics SW6
 
 ## Installation
-* clone repository `git clone git@gitlab.com:webmatch/shopware-plugins/webmatchusercentrics.git custom/plugins/WebmatchUsercentrics`
+* clone repository `git clone https://github.com/webmatch/Usercentrics.git custom/plugins/WebmatchUsercentrics`
 * remove git folder `rm -rf custom/plugins/WebmatchUsercentrics/.git`
 * install and activate: `bin/console plugin:install -a WebmatchUsercentrics`
 
