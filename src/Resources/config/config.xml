@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Basic Configuration</title>
+        <title lang="de-DE">Grundeinstellungen</title>
+
+        <input-field>
+            <name>settingsId</name>
+            <copyable>true</copyable>
+            <label>Usercentrics Settings ID</label>
+            <label lang="de-DE">Usercentrics Settings ID</label>
+            <placeholder>Your settings id</placeholder>
+            <placeholder lang="de-DE">Ihre Settings ID</placeholder>
+            <helpText>The settings ID can be found after account creation within the usercentrics backend.</helpText>
+            <helpText lang="de-DE">Die Settings-ID finden Sie nach Erstellung eines Accounts im Usercentrics Admin.</helpText>
+        </input-field>
+    </card>
+
+    <card>
+        <title>Local development</title>
+        <title lang="de-DE">Lokale Entwicklung</title>
+
+        <input-field type="bool">
+            <name>isLocalhost</name>
+            <default>false</default>
+            <label>Develop domain is "localhost"</label>
+            <label lang="de-DE">Entwicklungsdomain ist "localhost"</label>
+            <helpText>Enable if you are using "localhost" as you development domain.</helpText>
+            <helpText lang="de-DE">Aktivieren wenn die Entwicklungsdomain "localhost" ist.</helpText>
+        </input-field>
+    </card>
+</config>

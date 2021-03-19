@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<psalm
+    autoloader="../../../vendor/autoload.php"
+    findUnusedVariablesAndParams="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+>
+    <projectFiles>
+        <directory name="src"/>
+        <ignoreFiles>
+            <directory name="../../../platform"/> <!-- would otherwise inspect Shopware -->
+            <directory name="../../../vendor/shopware/platform"/> <!-- would otherwise inspect Shopware -->
+        </ignoreFiles>
+    </projectFiles>
+
+    <issueHandlers>
+        <!-- level 3 issues - slightly lazy code writing, but provably low false-negatives -->
+        <PropertyNotSetInConstructor errorLevel="info"/>
+        <MissingConstructor errorLevel="info"/>
+
+        <!-- level 4 issues - points to possible deficiencies in logic, higher false-positives -->
+        <PossiblyNullReference errorLevel="info"/>
+        <PossiblyNullArgument errorLevel="info"/>
+        <PossiblyNullArrayAccess errorLevel="info"/>
+
+    </issueHandlers>
+</psalm>

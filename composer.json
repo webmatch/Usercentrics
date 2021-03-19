@@ -1,0 +1,29 @@
+{
+    "name": "webmatch/usercentrics",
+    "version": "0.0.1",
+    "description": "Integrates usercentrics",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Webmatch GmbH"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Webmatch\\Usercentrics\\": "src/"
+        }
+    },
+    "require": {
+        "shopware/core": ">=6.1",
+        "shopware/administration": ">=6.1",
+        "shopware/storefront": ">=6.1"
+    },
+    "extra": {
+        "shopware-plugin-class": "Webmatch\\Usercentrics\\WebmatchUsercentrics",
+        "label": {
+            "de-DE": "Webmatch usercentrics integration",
+            "en-GB": "Webmatch usercentrics integration"
+        }
+    }
+}
