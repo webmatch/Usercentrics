@@ -1,4 +1,4 @@
-# WbmUsercentrics SW6
+# Webmatch Usercentrics SW6
 
 ## Installation
 * clone repository `git clone https://github.com/webmatch/Usercentrics.git custom/plugins/WebmatchUsercentrics`
