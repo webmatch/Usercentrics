@@ -9,10 +9,14 @@
                     "iabIframe": "https://usercentrics.mgr.consensu.org/sit/consensuIframeIndex.html",
                     "crossDomainConsentSharingIFrame": "https://app.usercentrics.eu/latest/cdcs-iframe-index.html"
                 },
-                settingsId : '{{ WebmatchUsercentrics.settingsId }}'
+                settingsId: '{{ WebmatchUsercentrics.settingsId }}'
             }
         </script>
     {% endif %}
-    <script type="application/javascript" src="https://app.usercentrics.eu/latest/main.js" id="{{ WebmatchUsercentrics.settingsId }}"></script>
+    {% if WebmatchUsercentrics.version == 'v2' %}
+        <script id="usercentrics-cmp" data-settings-id="{{ WebmatchUsercentrics.settingsId }}" src="https://app.usercentrics.eu/browser-ui/latest/bundle.js" defer></script>
+    {% else %}
+        <script type="application/javascript" src="https://app.usercentrics.eu/latest/main.js" id="{{ WebmatchUsercentrics.settingsId }}"></script>
+    {% endif %}
     {{ parent() }}
 {% endblock %}
