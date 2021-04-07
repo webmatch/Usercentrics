@@ -16,6 +16,24 @@
             <helpText>The settings ID can be found after account creation within the usercentrics backend.</helpText>
             <helpText lang="de-DE">Die Settings-ID finden Sie nach Erstellung eines Accounts im Usercentrics Admin.</helpText>
         </input-field>
+        <input-field type="single-select">
+            <name>version</name>
+            <options>
+                <option>
+                    <id>v1</id>
+                    <name>CMP Version 1 (default)</name>
+                    <name lang="de-DE">CMP Version 1 (default)</name>
+                </option>
+                <option>
+                    <id>v2</id>
+                    <name>CMP Version 2</name>
+                    <name lang="de-DE">CMP Version 2</name>
+                </option>
+            </options>
+            <defaultValue>v1</defaultValue>
+            <label>Version</label>
+            <label lang="de-DE">Version</label>
+        </input-field>
     </card>
 
     <card>
