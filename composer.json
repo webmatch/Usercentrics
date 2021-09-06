@@ -1,6 +1,6 @@
 {
     "name": "webmatch/usercentrics",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Integrates usercentrics",
     "type": "shopware-platform-plugin",
     "license": "MIT",
