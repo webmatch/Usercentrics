@@ -5,7 +5,7 @@
         <script type="text/javascript">
             window["usercentrics"] = {
                 paths: {
-                    "bundle": "https://app.usercentrics.eu/latest/bundle.js",
+                    "bundle": "https://app.usercentrics.eu/latest/loader.js",
                     "iabIframe": "https://usercentrics.mgr.consensu.org/sit/consensuIframeIndex.html",
                     "crossDomainConsentSharingIFrame": "https://app.usercentrics.eu/latest/cdcs-iframe-index.html"
                 },
@@ -14,7 +14,7 @@
         </script>
     {% endif %}
     {% if WebmatchUsercentrics.version == 'v2' %}
-        <script id="usercentrics-cmp" data-settings-id="{{ WebmatchUsercentrics.settingsId }}" src="https://app.usercentrics.eu/browser-ui/latest/bundle.js" defer></script>
+        <script id="usercentrics-cmp" data-settings-id="{{ WebmatchUsercentrics.settingsId }}" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" async></script>
     {% else %}
         <script type="application/javascript" src="https://app.usercentrics.eu/latest/main.js" id="{{ WebmatchUsercentrics.settingsId }}"></script>
     {% endif %}
